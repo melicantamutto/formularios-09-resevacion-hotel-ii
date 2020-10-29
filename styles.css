@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+:root{
+    --pink: #ff0063;
+}
+html{
+    background-image: url(https://colorlib.com/etc/bforms/colorlib-booking-11/img/background.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+}
+body{
+    background-color: rgba(186, 150, 221, 0.2);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    width: fit-content;
+    height:fit-content;
+    padding: 1.55em;
+    background-color: white;
+    border-radius: 2px;
+}
+ul{
+    list-style: none;
+    display: flex;    
+}
+
+fieldset{
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+li{
+    display: flex;
+    flex-direction: column;
+    border-right: 2px solid rgba(155, 155, 155, 0.2);
+    padding: 0.2em;
+    width: 14em;
+    margin-right: 1.65em;
+}
+li:last-of-type{
+width: 5em;
+}
+label{
+    color:var(--pink);
+    font-size: 0.9em;
+}
+li:first-of-type{
+    width: 16em;
+}
+input{
+    color: rgba(116, 116, 116, 1);
+}
+input, select{
+    border: none;
+    background-color: inherit;
+    padding-top: 0.55em;
+    font-size: 1.25em;
+    outline: none;
+}
+.text{
+    color: rgb(41, 41, 41);
+}
+.text::placeholder{
+    color: rgba(116, 116, 116, 1);
+    opacity: 1;
+}
+select:focus, select:active{
+    border: none;
+    outline: none;
+}
+button{
+    background-color: var(--pink);
+    color: white;
+    border: none;
+    padding: 1.6em 3em;
+    font-size: 1em;
+    border-radius: 2px;
+}

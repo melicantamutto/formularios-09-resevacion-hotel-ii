@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="styles.css">
+    <title>Reservación de hotel II</title>
+</head>
+<body>
+    <main>
+        <form>
+            <fieldset>
+                <ul>
+                    <li>
+                        <label for="destination">Destination</label>
+                        <input class="text" type="text" id="destination" name="destination" placeholder="Country, ZIP, city..." />
+                    </li>
+                    <li>
+                        <label for="checkIn">Check In</label>
+                        <input type="date" id="checkIn" name="checkIn" placeholder="mm/dd/yyyy" />
+                    </li>
+                    <li>
+                        <label for="checkOut">Check Out</label>
+                        <input type="date" id="checkOut" name="checkOut" placeholder="mm/dd/yyyy" />
+                    </li>
+                    <li>
+                        <label for="guests">Guests</label>
+                        <select name="guests" id="guests">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </li>
+                </ul>
+                <button type="submit">Check Availability</button>
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>
